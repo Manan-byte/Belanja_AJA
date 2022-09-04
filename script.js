@@ -6,7 +6,7 @@ let addlist_from = document.getElementById("addlist_from");
 let root =document.getElementById("root");
 let subtitle =document.getElementById("subtitle");
 //data subtitle
-subtitle.innerHTML = new Date().toDateString();
+subtitle.innerHTML = new Date().toLocaleDateString();
 //data belanja 
 let data_list_belanja = [];
 // even listener
@@ -37,7 +37,7 @@ addlist_from.addEventListener("submit", (event)=>{
   data_list_belanja.push({
     nama_barang : barang,
     harga_barang : harga,
-    tanggal : new Date().toDateString()
+    tanggal : new Date().toLocaleDateString()
 
   })
 
